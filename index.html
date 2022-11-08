@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/7bcccd3ed9.js" crossorigin="anonymous"></script>
+    <title>Ejercicio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <h1>Bienvenido invitado</h1>
+        <ul>
+          <li><button>Cambiar Titulo</button></li>
+          <li><button>Cambiar Fondo</button></li>
+          <li><button>Modo Oscuro</button></li>
+          <li><button>Ver Password</button></li>
+          <li><button>Ocultar Menu</button></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container d-none" id="change-title">
+        <h2>Cambiemos nuestro titulo</h2>
+        <form action="" class="formulario">
+          <input type="text" placeholder="Ingresa un nuevo titulo" />
+          <button>Enviar</button>
+        </form>
+      </div>
+
+      <div class="container d-none" id="chage-background">
+        <h2>Cambiemos el color de fondo</h2>
+        <form action="" class="formulario">
+          <input type="color" placeholder="Color" />
+        </form>
+      </div>
+
+      <div class="container" id="show-password">
+        <h2>Ver contraseña</h2>
+        <form action="" class="formulario">
+            <input type="email" placeholder="john@doe.com" id="email" />
+            <input type="password" placeholder="password" id="password" />
+            <span><i class="fas fa-eye-slash" id="showPass"></i></span>
+        </form>
+      </div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
