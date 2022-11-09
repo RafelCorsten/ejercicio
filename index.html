@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <div class="navbar">
-        <h1>Bienvenido invitado</h1>
+        <h1>Bienvenido </h1>
         <ul>
           <li><button>Cambiar Titulo</button></li>
           <li><button>Cambiar Fondo</button></li>
@@ -23,29 +23,32 @@
     </header>
 
     <main class="main">
-      <div class="container d-none" id="change-title">
+
+      <article class="container" id="change-title">
         <h2>Cambiemos nuestro titulo</h2>
         <form action="" class="formulario">
-          <input type="text" placeholder="Ingresa un nuevo titulo" />
+          <input type="text" placeholder="Ingresa un nuevo titulo" value="Hola" />
           <button>Enviar</button>
         </form>
-      </div>
+      </article>
 
-      <div class="container d-none" id="chage-background">
+      <article class="container d-none" id="chage-background">
         <h2>Cambiemos el color de fondo</h2>
         <form action="" class="formulario">
           <input type="color" placeholder="Color" />
         </form>
-      </div>
+      </article>
 
-      <div class="container" id="show-password">
+      <article class="container d-none" id="show-password">
         <h2>Ver contraseña</h2>
         <form action="" class="formulario">
             <input type="email" placeholder="john@doe.com" id="email" />
             <input type="password" placeholder="password" id="password" />
-            <span><i class="fas fa-eye-slash" id="showPass"></i></span>
+            <span><i class="fas fa-eye-slash d-none" id="showPass"></i></span>
+            <span><i class="fas fa-eye"></i></span>
         </form>
-      </div>
+      </article>
+
     </main>
 
     <footer></footer>
